@@ -1,0 +1,28 @@
+.GoogleAuth{
+    width: 100% !important;
+}
+
+.GoogleAuth .googleBtn{
+    height: 2.8em !important;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    padding: 0 2em;
+    width: 100%;
+    background-color: white !important;
+    border: 1px solid gray !important;
+    cursor: pointer;
+}
+
+.GoogleAuth .googleBtn p{
+    color: black;
+}
+
+.GoogleAuth .googleBtn img{
+    left: 2em;
+    position: absolute;
+    height: 60%;
+}

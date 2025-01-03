@@ -1,0 +1,21 @@
+.AdmSideBar{
+    display: flex;
+    flex-direction: column;
+    /* border-right: 1px solid gray; */
+    height: calc(100vh);
+}
+
+.AdmSideBar .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 2em;
+    border-bottom: 1px solid gray;
+    color: gray;
+    cursor: pointer;
+}
+
+.AdmSideBar .item svg{
+    font-size: 1.5em;
+}

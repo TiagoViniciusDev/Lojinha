@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+  --mainColor: rgba(88, 216, 153, 1);
+  --mainColor2: rgba(78, 191, 95, 0.2);
+
+  --AdmMainColor: red;
+  --AdmMainColor2: black;
+
+  --gray: rgba(0,0,0,0.5);
+  --gray2: rgb(200,200,200);
+  --gray3: rgba(245, 245, 245, 1);
+  --textColor:rgba(97, 97, 97, 1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+p, span, a, h2, h1, h3{
+  color: var(--textColor);
+}
+
+a{
+  text-decoration: none;
+}
+
+a, button{
+  cursor: pointer;
+}
+
+.container{
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Sing */
+
+.Sing{
+  text-align: center;
+  width: 94%;
+  max-width: 30em;
+
+  margin: 4em 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 1px solid black;
+  padding: 2em;
+}
+
+.Sing .container .text{
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Sing .container .text p:first-of-type{
+  font-weight: 700;
+}
+
+.Sing .container .text .icon{
+  width: fit-content;
+  background-color: var(--mainColor);
+  padding: 1em;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.Sing .container .text .icon svg{
+  color: white;
+  font-size: 2em;
+}
+
+.Sing .container .text .icon img{
+  width: 2em;
+  height: 2em;
+}
+
+.Sing .container form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.Sing .container form input, .Sing .container form select{
+  height: 3.5em;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5em;
+  padding: 0 1em;
+}
+
+.Sing .container form input::placeholder{
+  color: gray;
+}
+
+.Sing form button{
+  background-color: var(--mainColor);
+  color: white;
+  height: 3em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.Sing form .return{
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+}
+
+.Sing form select{
+  color: gray;
+}
+
+.Sing .anotherForm{
+  margin-top: 1em;
+}
+
+.Sing .anotherForm p{
+  font-weight: 600;
+}
+
+.Sing .anotherForm p a{
+  color: #1b94d1;
+}
+
+.Sing .errorMsg{
+  color: red;
+}
+
+/*  */

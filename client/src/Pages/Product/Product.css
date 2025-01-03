@@ -1,0 +1,212 @@
+.Product{
+    margin: 4em 0;
+}
+
+.Product .container .div1{
+    display: flex;
+    gap: 1.5em;
+}
+
+.Product .container .div1 .productImgs{
+    display: flex;
+    gap: 0.5em;
+    flex-direction: row-reverse;
+
+    width: 40%;
+}
+
+.Product .container .div1 .productImgs .mobileSlide{
+    width: 100%;
+    display: none;
+}
+
+.Product .container .div1 .productImgs .mobileSlide .img{
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+}
+
+.Product .container .div1 .productImgs .sideImgs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-height: 24em;
+}
+
+.Product .container .div1 .productImgs .sideImgs .img{
+    width: 6em;
+    height: 6em;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: 1px solid var(--gray2);
+    background-color: var(--gray2);
+}
+
+.Product .container .div1 .productImgs .mainImg{
+    width: calc(100% - 6em);
+    padding-top: calc(100% - 6em);
+    background-size: cover;
+    border: 1px solid var(--gray2);
+    background-color: var(--gray2);
+}
+
+.Product .container .div1 .productInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    padding-left: 1em;
+
+    width: 60%;
+}
+
+.Product .container .div1 .productInfo .productName{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.Product .container .div1 .productInfo .buttons{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    margin-top: 1em;
+    flex-direction: column;
+}
+
+.Product .container .div1 .productInfo .buttons a{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: var(--mainColor);
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+}
+
+.Product .container .div1 .productInfo .buttons a:nth-of-type(2){
+    background-color: white;
+    color: black;
+    border: 1px solid var(--gray2);
+}
+
+.Product .container .div1 .productInfo .buttons a:hover{
+    opacity: 0.9;
+}
+
+.Product .container .div1 .productInfo .priceInfo p:nth-of-type(1){
+    color: gray;
+    font-size: 0.8em;
+}
+
+.Product .container .div1 .productInfo .priceInfo p:nth-of-type(1) span{
+    text-decoration: line-through;
+}
+
+.Product .container .div1 .productInfo .priceInfo p:nth-of-type(2){
+    font-size: 1.2em;
+    font-weight: 500;
+    color:rgba(88, 216, 153, 1);
+}
+
+.Product .container .div1 .productInfo .shipping{
+    display: flex;
+    gap: 1.5em;
+    border: 1px solid var(--gray2);
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.Product .container .div1 .productInfo .shipping form{
+    display: flex;
+    gap: 0.3em;
+}
+
+.Product .container .div1 .productInfo .shipping form input{
+    height: 2em;
+    padding: 0.5em;
+}
+
+.Product .container .div1 .productInfo .shipping form button{
+    height: 2em;
+    padding: 0 0.5em;
+    color: white;
+    background-color: var(--mainColor);
+    border: none;
+}
+
+.Product .container .div2{
+    margin-top: 2em;
+}
+
+.Product .container .div2 .desc h2{
+    margin-bottom: 0.5em;
+}
+
+.Product .container .div2 .desc p{
+    white-space: pre-wrap;
+}
+
+.Product .container .shippingOptions{
+    
+}
+
+.Product .container .shippingOptions .option{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid gray;
+    padding: 1em;
+}
+
+.Product .container .shippingOptions .option img{
+    width: 50%;
+    max-width: 10em;
+}
+
+@media screen and (max-width: 1200px) {
+    .Product .container .div1 .productImgs{
+        width: 60%;
+    }
+
+    .Product .container .div1 .productInfo{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .Product .container .div1{
+        flex-direction: column;
+    }
+
+    .Product .container .div1 .productImgs{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Product .container .div1 .productImgs .sideImgs{
+        display: none;
+    }
+
+    .Product .container .div1 .productImgs .mainImg{
+        display: none;
+    }
+
+    .Product .container .div1 .productImgs .mobileSlide{
+        display: flex;
+    }
+
+    .Product .container .div1 .productInfo{
+        width: 100%;
+    }
+}

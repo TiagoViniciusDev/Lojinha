@@ -1,0 +1,92 @@
+.CategoriesAdm h3{
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1em;
+}
+
+.CategoriesAdm .categories{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.CategoriesAdm .categories .categoryItem{
+    padding: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.CategoriesAdm .categories .categoryItem .edit{
+    display: flex;
+    flex-direction: column;
+}
+
+.CategoriesAdm .categories .categoryItem .edit input{
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+.CategoriesAdm .categories .categoryItem .edit .btns{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+.CategoriesAdm .categories .categoryItem .edit .btns button{
+    width: 33%;
+    padding: 0.5em 1em;
+    font-weight: 500;
+    color: white;
+    border: 1px solid black;
+}
+
+.CategoriesAdm .categories .categoryItem .edit .btns button:nth-of-type(1){
+    background-color: var(--AdmMainColor);
+}
+
+.CategoriesAdm .categories .categoryItem .edit .btns button:nth-of-type(2){
+    background-color: darkred;
+}
+
+.CategoriesAdm .categories .categoryItem .edit .btns button:nth-of-type(3){
+    background-color: black;
+}
+
+.CategoriesAdm .categories .newCategory{
+    position: relative;
+    cursor: pointer;
+    min-height: 7em;
+}
+
+.CategoriesAdm .categories .newCategory svg{
+    font-size: 4em;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.CategoriesAdm .categories .newCategory:hover > svg{
+    color: blue;
+}
+
+.CategoriesAdm .categories .newCategory .edit .btns button{
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px){
+    .CategoriesAdm .categories{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .CategoriesAdm .categories{
+        grid-template-columns: auto;
+    }
+}

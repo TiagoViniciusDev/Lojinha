@@ -1,0 +1,33 @@
+.ProductUserContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+
+    padding: 1.5em 0;
+    margin: 0 1em;
+
+    border: 1px dashed gray;
+    border-left: none;
+    border-right: none;
+    border-collapse: collapse;
+}
+
+
+.ProductUserContainer > div:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 40%;
+}
+
+.ProductUserContainer > div > .productImg{
+    width: 4em;
+    height: 4em;
+    background-size: cover;
+}
+
+.ProductUserContainer svg{
+    cursor: pointer;
+    font-size: 1.5em;
+}

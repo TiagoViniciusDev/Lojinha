@@ -1,0 +1,15 @@
+.MyAccount{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+@media screen and (max-width: 920px) {
+    .MyAccount{
+        flex-direction: column;
+    }
+
+    .MyAccount .item{
+        width: 100%;
+    }
+}

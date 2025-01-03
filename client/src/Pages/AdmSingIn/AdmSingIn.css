@@ -1,0 +1,11 @@
+.AdmSingIn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 0;
+}
+
+.AdmSingIn .container .text .icon svg{
+    font-size: 3em;
+}

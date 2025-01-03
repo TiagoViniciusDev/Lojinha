@@ -1,0 +1,75 @@
+.ProductContainer{
+    width: calc(25% - 0.5em) !important;
+    cursor: pointer;
+    border: 1px solid rgb(230,230,230);
+    padding-bottom: 1em;
+}
+
+.ProductContainer .productImg{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url(card-image2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.5em;
+}
+
+.ProductContainer .text{
+    padding: 0 1em;
+}
+
+.ProductContainer .text > p{
+    font-size: 1.2em;
+    /* background-color: red; */
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.ProductContainer .price{
+    margin: 1em 0;
+}
+
+.ProductContainer .price p:nth-of-type(1){
+    color: gray;
+    font-size: 0.8em;
+}
+
+.ProductContainer .price p:nth-of-type(1) span{
+    text-decoration: line-through;
+}
+
+.ProductContainer .price p:nth-of-type(2){
+    font-size: 1.2em;
+    font-weight: 500;
+    color:rgba(88, 216, 153, 1);
+}
+
+.ProductContainer .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ProductContainer .buttons button{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: center;
+    color: white;
+    background-color: var(--mainColor);
+    border: none;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.ProductContainer .buttons button:hover{
+    opacity: 0.8;
+}
+
+
+.ProductContainer .buttons button:first-of-type{
+    color: black;
+    background-color: white;
+}
+

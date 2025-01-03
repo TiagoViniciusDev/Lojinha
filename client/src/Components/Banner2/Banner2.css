@@ -1,0 +1,20 @@
+.Banner2 h3{
+    text-transform: uppercase;
+    padding: 0.5em 0;
+    border-bottom: 1px solid black;
+}
+
+.Banner2 .imgs{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.Banner2 .imgs a{
+    width: 33%;
+}
+
+.Banner2 .imgs img{
+    width: 100%;
+}

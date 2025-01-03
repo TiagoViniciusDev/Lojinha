@@ -1,0 +1,166 @@
+:root{
+    --BorderRadiusSearchBar: 0.7em;
+    --searchBarColor: var(--gray3);
+}
+
+.Header{
+    
+}
+
+.Header .container > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    padding: 2em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.Header .container > div > h2{
+    font-weight: 500;
+}
+
+.Header .container form{
+    width: 100%;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: var(--BorderRadiusSearchBar);
+    padding: 0em 0;
+    padding-left: 1em;
+    align-items: center;
+
+    background-color: var(--searchBarColor);
+}
+
+.Header .container form input{
+    width: 100%;
+    height: 3em;
+    border: none;
+
+    background-color: var(--searchBarColor);
+}
+
+.Header .container form button{
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 var(--BorderRadiusSearchBar) var(--BorderRadiusSearchBar) 0;
+    background-color: transparent;
+    padding: 0 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header .container form button:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.Header .container form input:focus{
+    outline: none;
+}
+
+.Header .container > div .menuMobileBtn{
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+
+.Header .container .part3{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.Header .container .part3 > div{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.Header .container .part3 > div:hover{
+    color: var(--mainColor);
+}
+
+.Header .container .part3 > div p{
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.Header .container .part3 > div svg{
+    font-size: 1.5em;
+}
+
+.Header .container .mobileNav{
+    display: none;
+    padding: 1em 0;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.03);
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.Header .container .mobileNav > div{
+    width: 100%;
+    padding: 0 1em;
+}
+
+.Header .container .mobileNav .part3{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+}
+
+.Header .container .mobileNav .part3 > div{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid gray;
+}
+
+.Header .container .mobileNav .part3 > div:first-of-type{
+    border-bottom: none;
+}
+
+.Header .container .mobileNav .part3 > div:hover{
+    background-color: white;
+}
+
+
+@media screen and (max-width: 720px){
+    .Header > div{
+        border: none;
+    }
+    .Header .container > div .menuMobileBtn{
+        display: block;
+    }
+
+    .Header .container > div{
+        padding: 1em 0;
+    }
+
+    .Header .container > div .part3{
+        display: none;
+    }
+
+    .Header .container > div form{
+        display: none;
+    }
+
+    .Header .container  .mobileNav form{
+        background-color: white;
+    }
+
+    .Header .container  .mobileNav form input{
+        background-color: white !important;
+    }
+
+    .Header .container .mobileNav{
+        display: flex;
+    }
+
+}

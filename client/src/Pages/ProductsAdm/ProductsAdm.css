@@ -1,0 +1,215 @@
+.ProductsAdm .btnsOptions button{
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    /* background-color: var(--mainColor); */
+    border: 1px solid black;
+
+    background-color: var(--AdmMainColor2);
+}
+
+.ProductsAdm .newProductForm{
+    margin: 0.5em 0;
+    margin-bottom: 3em;
+    display: flex;
+    gap: 1em;
+}
+
+.ProductsAdm .newProductForm .uploadImgs{
+    width: 50%;
+    height: fit-content;
+    min-height: 20em;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid black;
+}
+
+.ProductsAdm .newProductForm .uploadImgs .uploadInfo{
+     text-align: center;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     color: gray;
+     cursor: pointer;
+}
+
+.ProductsAdm .newProductForm .uploadImgs .uploadInfo svg{
+    font-size: 3em;
+}
+
+.ProductsAdm .newProductForm .uploadImgs .selectedImgs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.ProductsAdm .newProductForm .uploadImgs .selectedImgs img{
+   width: 33%;
+   border: 1px solid black;
+}
+
+.ProductsAdm .newProductForm .infoProduct{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ProductsAdm .newProductForm .infoProduct input{
+    height: 3em;
+    padding: 0.5em 1em;
+}
+
+.ProductsAdm .newProductForm .infoProduct select, option{
+    height: 6em !important;
+    padding: 0.5em 1em;
+}
+
+.ProductsAdm .newProductForm .infoProduct select{
+    color: gray;
+}
+
+.ProductsAdm .newProductForm .infoProduct textarea{
+    height: 100%;
+    padding: 0.5em 1em;
+    resize: none;
+}
+
+.ProductsAdm .newProductForm .infoProduct .btns{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.ProductsAdm .newProductForm .infoProduct .btns button{
+    width: 50%;
+    height: 3em;
+    cursor: pointer;
+
+    font-weight: 500;
+    border: 1px solid black;
+    color: white;
+}
+
+.ProductsAdm .newProductForm .infoProduct .btns button:first-of-type{
+    background-color: var(--AdmMainColor);
+}
+
+.ProductsAdm .newProductForm .infoProduct .btns button:last-of-type{
+    background-color: var(--AdmMainColor2);
+}
+
+.ProductsAdm .productsAdmHeader{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: end;
+
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid black;
+    margin: 1em 0;
+}
+
+.ProductsAdm .productsAdmHeader h3{
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.ProductsAdm .productsAdmHeader .productsFilter{
+    width: 50%;
+    min-width: 20em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.ProductsAdm .productsAdmHeader .productsFilter input{
+    width: 100%;
+    padding: 0.5em 1em;
+}
+
+.ProductsAdm .productsAdmHeader .productsFilter svg{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.ProductsAdm .btnsOptions button{
+    margin: 1em 0;
+    width: 100%;
+    height: 3em;
+}
+
+/*PRODUTOS*/
+
+.ProductsAdm .products{
+    margin: 2em 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.ProductsAdm .products .product{
+    cursor: pointer;
+    border: 1px solid black;
+    width: 100%;
+    background-color: white;
+}
+
+.ProductsAdm .products .product .productImg{
+    width: 100%;
+    padding-top: 100%;
+    /* background-image: url(../../../public//card-image2.jpg); */
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid gray; */
+}
+
+.ProductsAdm .products .product .info{
+    padding: 1em;
+}
+
+.ProductsAdm .products .product p:nth-of-type(2){
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.ProductsAdm .products .product p:nth-of-type(3){
+    color: gray;
+}
+
+.ProductsAdm .products .product .productBtns{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProductsAdm .products .product .productBtns button{
+    padding: 0.5em 1em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 0.5em;
+    border: 1px solid black;
+}
+
+.ProductsAdm .products .product .productBtns button:hover{
+    opacity: 0.9;
+}
+
+.ProductsAdm .products .product .productBtns button:nth-of-type(1){
+    background-color: var(--AdmMainColor2);
+    color: white;
+    opacity: 1;
+}
+
+.ProductsAdm .products .product .productBtns button:nth-of-type(2){
+    background-color: var(--AdmMainColor);
+}

@@ -1,0 +1,11 @@
+.AdmLayout .content{
+    display: flex;
+    height: 100%;
+}
+
+.outletContainer{
+    width: 100%;
+    padding: 2em;
+
+    border-left: 1px solid gray;
+}

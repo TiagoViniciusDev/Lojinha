@@ -1,0 +1,34 @@
+.Error{
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--gray2);
+    padding: 1em 2em;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.Error .title{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.Error .title img{
+    width: 2em;
+}
+
+.Error a{
+    font-weight: 600;
+}
+
+.Error a:hover{
+    color: blue;
+}

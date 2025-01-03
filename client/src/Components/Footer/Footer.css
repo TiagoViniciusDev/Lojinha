@@ -1,0 +1,74 @@
+.Footer{
+    background-color: rgba(245, 245, 245, 1);
+    padding: 3em 0;
+}
+
+.Footer .container .footerMain{
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+}
+
+.Footer .container .footerMain .part1{
+    width: 50%;
+}
+
+.Footer .container .footerMain .part1 h2{
+    margin-bottom: 0.5em;
+}
+
+.Footer .container .footerMain .part2{
+    display: flex;
+    gap: 2em;
+}
+
+.Footer .container .footerMain .part2 nav{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.Footer .container .footerMain .part2 nav p{
+    color: black;
+    margin-bottom: 0.5em;
+}
+
+.Footer .container .footerMain .part2 nav a{
+    white-space: nowrap;
+}
+
+.Footer .container .footerMain .part2 nav a:hover{
+    color: var(--mainColor);
+}
+
+.Footer .container > p{
+    margin-top: 2em;
+}
+
+
+@media screen and (max-width: 720px){
+    .Footer .container .footerMain{
+        flex-direction: column;
+    }
+
+    .Footer .container .footerMain .part1{
+        width: 100%;
+    }
+
+    .Footer .container .footerMain .part2{
+        padding: 0 2em;
+        justify-content: space-between;
+    }
+
+    .Footer .container > p{
+        margin-top: 4em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 512px){
+    .Footer .container .footerMain .part2{
+        flex-direction: column;
+    }
+}

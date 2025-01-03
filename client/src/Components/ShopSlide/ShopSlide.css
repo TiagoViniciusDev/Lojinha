@@ -1,0 +1,32 @@
+.ShopSlide{
+    /* margin: 1em 0;
+
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+
+    overflow-x: auto;
+
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5em; */
+}
+
+.ShopSlide .ProductContainer{
+    width: 100% !important;
+    margin: 1em 0;
+}
+
+.ShopSlide .product > div{
+    width: 100%;
+}
+
+@media screen and (max-width: 720px){
+    /* .ShopSlide{
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+
+    .ShopSlide > div{
+
+    }
+}

@@ -1,0 +1,10 @@
+.Home .categoryTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-transform: uppercase; */
+    border-bottom: 1px solid var(--gray2);
+    padding: 0.5em 0;
+    color: rgba(97, 97, 97, 1);
+    font-weight: 600;
+}

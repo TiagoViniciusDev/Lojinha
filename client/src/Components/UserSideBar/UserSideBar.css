@@ -1,0 +1,28 @@
+.UserSideBar{
+    background-color: var(--gray3);
+}
+
+.UserSideBar .selected{
+    border-right: 3px solid var(--mainColor);
+}
+
+.UserSideBar a{
+    width: 100%;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    padding: 1em;
+    padding-right: 5em;
+    white-space: nowrap;
+}
+
+.UserSideBar a:hover, .UserSideBar a:hover > p{
+    background-color: rgba(180, 180, 180, 1);
+    color: white;
+}
+
+@media screen and (max-width: 720px){
+    .UserSideBar a{
+        padding: 1em;
+    }
+}
